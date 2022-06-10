@@ -1,0 +1,96 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:name_tag_from_wood_planks"
+    ]
+  },
+  
+  "criteria": {
+    "has_strings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:string"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:name_tag_from_wood_planks"
+      }
+    }
+  },
+  
+  "criteria":{
+    "has_wooden_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+			"tag": "minecraft:wooden_planks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:name_tag_from_wood_planks"
+      }
+    }
+  },
+  
+  "criteria": {
+    "has_wooden_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+ 			"tag": "minecraft:wooden_slabs"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:name_tag_from_wood_planks"
+      }
+    }
+  },
+  
+  "criteria": {
+    "has_wooden_pressure_plates": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+ 			"tag": "minecraft:wooden_pressure_plates"
+
+          }
+        ]
+      }
+    },
+	
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:name_tag_from_wood_planks"
+      }
+    }
+  },
+  
+  "requirements": [
+    [
+      "has_strings",
+	  "has_wooden_slabs",
+	  "has_wooden_pressure_plates",
+	  "has_wooden_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

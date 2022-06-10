@@ -1,6 +1,11 @@
 # Gradle build system ignores
-build
-.gradle
+build/
+gradle/vcs-1/
+gradle/7.1.1/
+gradle/checksums/
+gradle/buildOutputCleanup/
+.gradle/
+*.lock
 
 # Eclipse
 bin
@@ -8,34 +13,20 @@ bin
 .classpath
 .metadata
 .project
-.settings
 
 # Other IDE related folders
-.idea
-
-# Files from Forge MDK
-forge*changelog.txt
+.idea/
+.settings/
 
 # MCreator workspace
-.mcreator
+.mcreator/
 
 # Minecraft client/server files
-run
+run/
 
-# MacOS system files
-.DS_STORE
+#GitHub
+.git/
+.gitignore
 
 # Other
-*.ipr
-*.iws
-out/
-*.iml
-output/
-bin/
-libs/
-__save
-
-classes/
-
-.vscode/
-logs/
+__save/
