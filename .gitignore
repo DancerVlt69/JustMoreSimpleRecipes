@@ -1,0 +1,41 @@
+# Gradle build system ignores
+build
+.gradle
+
+# Eclipse
+bin
+*.launch
+.classpath
+.metadata
+.project
+.settings
+
+# Other IDE related folders
+.idea
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# MCreator workspace
+.mcreator
+
+# Minecraft client/server files
+run
+
+# MacOS system files
+.DS_STORE
+
+# Other
+*.ipr
+*.iws
+out/
+*.iml
+output/
+bin/
+libs/
+__save
+
+classes/
+
+.vscode/
+logs/

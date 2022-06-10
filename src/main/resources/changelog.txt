@@ -1,10 +1,20 @@
 JMSR changelog:
 
 ----------
+ V 0.1.7c
+----------
+
+- porting to Minecraft Version 1.17.1 (and 1.18)
+
+- some small corrections
+
+- this Mod-Version is tested with Forge Version 37.0.114 for Minecraft V 1.17.1 Java Edition
+
+----------
  V 0.1.7b 
 ----------
 
-- set licens to GNU 2.0, now the code is free to use for all
+- set license to GNU 2.0, now the code is free to use for all
 
 - fixes
 

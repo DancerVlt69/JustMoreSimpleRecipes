@@ -4,6 +4,7 @@
         "#",
         "S"
     ],
+	
     "key": {
         "#": {
             "item": "minecraft:melon"
@@ -12,12 +13,9 @@
             "tag": "minecraft:blading_tools"
         }
     },
-    "result": [
-		{
+	
+    "result": {
         "item": "minecraft:melon_slice",
         "count": 8
-		},
-		{
-		"tag": "minecraft:blading_tools"
-		}]
+	}
 }
