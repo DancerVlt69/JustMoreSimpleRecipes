@@ -1,11 +1,5 @@
 # Gradle build system ignores
 build
-gradle
-
-#/vcs-1/
-#gradle/7.1.1
-#gradle/checksums
-#gradle/buildOutputCleanup
 .gradle
 
 # Eclipse
