@@ -10,11 +10,21 @@
 			"item": "pamhc2foodcore:freshwateritem"
 		},
 		"B": {
-			"tag": "minecraft:colored_beds"
+			"tag": "jmsr_forge:colored_beds"
 		}
 	},
 	"result": {
 		"item": "minecraft:white_bed",
 		"count": 1
+	},
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "pamhc2foodcore"
+		},
+		{
+			"type": "forge:item_exists",
+			"item": "pamhc2foodcore:freshwateritem"
 		}
+	]
 }

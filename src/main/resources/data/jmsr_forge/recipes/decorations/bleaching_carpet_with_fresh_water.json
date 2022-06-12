@@ -15,5 +15,15 @@
 	"result": {
 		"item": "minecraft:white_carpet",
 		"count": 1
+	},
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "pamhc2foodcore"
+		},
+		{
+			"type": "forge:item_exists",
+			"item": "pamhc2foodcore:freshwateritem"
 		}
+	]
 }
