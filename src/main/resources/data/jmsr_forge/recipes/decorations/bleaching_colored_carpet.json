@@ -6,7 +6,7 @@
     ],
     "key": {
         "_": {
-            "tag": "minecraft:colored_carpets"
+            "tag": "jmsr_forge:colored_carpets"
         },
         "W": {
             "item": "minecraft:water_bucket"

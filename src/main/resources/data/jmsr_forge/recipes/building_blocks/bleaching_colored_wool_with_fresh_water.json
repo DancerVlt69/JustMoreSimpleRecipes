@@ -10,11 +10,22 @@
 			"item": "pamhc2foodcore:freshwateritem"
 		},
 		"B": {
-			"tag": "minecraft:colored_wool_blocks"
+			"tag": "jmsr_forge:colored_wool_blocks"
 		}
 	},
 	"result": {
 		"item": "minecraft:white_wool",
 		"count": 1
+	},
+	
+	"conditions": [
+		{
+			"type": "forge:mod_loded",
+			"modid": "pamhc2foodcore"
+		},
+		{
+			"type": "forge:item_exists",
+			"item": "pamhc2foodcore:freshwateritem"
 		}
+	]
 }

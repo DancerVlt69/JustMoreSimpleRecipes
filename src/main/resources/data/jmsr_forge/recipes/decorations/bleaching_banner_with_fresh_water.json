@@ -10,7 +10,7 @@
 			"item": "pamhc2foodcore:freshwateritem"
 		},
 		"B": {
-			"tag": "minecraft:colored_banners"
+			"tag": "jmsr_forge:colored_banners"
 		}
 	},
 	"result": {

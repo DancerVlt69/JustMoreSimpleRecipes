@@ -7,7 +7,7 @@
 	],
 	"key": {
 		"#": {
-			"tag": "minecraft:colored_wool_blocks"
+			"tag": "jmsr_forget:colored_wool_blocks"
 		},
 		"W": {
 			"item": "minecraft:water_bucket"

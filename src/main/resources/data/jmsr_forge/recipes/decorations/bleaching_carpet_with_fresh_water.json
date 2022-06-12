@@ -9,7 +9,7 @@
 			"item": "pamhc2foodcore:freshwateritem"
 		},
 		"B": {
-			"tag": "minecraft:colored_carpets"
+			"tag": "jmsr_forge:colored_carpets"
 		}
 	},
 	"result": {
