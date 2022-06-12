@@ -1,42 +1,55 @@
 JMSR changelog:
 
 ----------
+ V 0.2.0a (right now in Alpha-Test)
+----------
+- this Mod-Version is tested with Forge 36.2.35
+
+- adding a lot of missing advancements
+- adding recipes:
+    * Stone- * Axe, * Hoe, * Shovel and/or  * Sword from (Clean-) Stone
+    * Wooden Planks from Wooden Slabs for the mods
+        - BambooEverything
+        - Environmental (Cherry)
+
+- adding & automate buildVersionNumber
+- updating recipes list (txt)
+
+----------
+ V 0.1.7d
+----------
+
+- start porting to MC Version 1.19
+
+----------
  V 0.1.7c
 ----------
 
-- porting to Minecraft Version 1.17.1 (and 1.18)
-
+- start porting to Minecraft Version 1.17.1 (and 1.18)
 - some small corrections
-
-- this Mod-Version is tested with Forge Version 37.0.114 for Minecraft V 1.17.1 Java Edition
 
 ----------
  V 0.1.7b 
 ----------
 
 - set license to GNU 2.0, now the code is free to use for all
-
 - fixes
 
 	* adding some missed recipes to the group "slabs2planks"
-	
 	* fixed one hidden recipe
 
 - added recipes
-
+    * Oak Plank from Chest and Shield
 	* Pickaxe from Stone Blocks and Sticks
-	
+	* Sticks from Arrow or Bow
 	* Stone Blocks from Stone Slabs | 2 Blocks from 4 Slabs
-	
 		- Cobblestone
 		- Stone
 
 - changes
 
 	* some directory oder corrections
-	
 	* some corrections on the recipe-list
-
 
 ------------------------------------------
  V 0.1.6b - running on Minecraft 1.16.1-5 
@@ -47,10 +60,8 @@ Inside the mod
 - added recipe/s
 
 	* Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
-	
 	* Leather from Rotten Flesh on the Campfire
-
-	* Planks from Wooden Slaps (30 recipes) | 2 Planks from 4 Slabs
+	* Planks from Wooden Slaps (39 recipes) | 2 Planks from 4 Slabs
 		
 		supported Wood types 
 			
@@ -63,7 +74,6 @@ Inside the mod
 			* The Endergetic
 			* Upgrade Aquatic
 
-
 ----------
  V 0.1.5b
 ----------
@@ -73,13 +83,9 @@ Inside the mod
 - added recipe/s
 
 	* Bone Meal from Nautilus Shell
-
 	* Leather from Armor, Horse Armor, and Saddle - 6 recipes
-
 	* Magma Cream from Magma Block (9 sec.), plus 0.3 XP (0.1 per Magma Cream)
-
 	* Stick from Arrow or Bow - 2 recipes
-
 
 ----------
  V 0.1.4c
