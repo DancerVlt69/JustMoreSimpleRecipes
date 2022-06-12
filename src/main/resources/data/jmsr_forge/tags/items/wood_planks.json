@@ -2,6 +2,11 @@
   "replace": false,
   "values": [
     "#minecraft:planks",
-    "#biomesopelty:planks"
+	"#atmospheric:planks",
+	"#autumniy:planks",
+	"#bamboo_blocks:planks",
+	"#bambooeverything:planks",
+    "#biomesopelty:planks",
+	"#environmental:plans"
   ]
 }
