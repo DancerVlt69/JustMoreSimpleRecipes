@@ -24,5 +24,7 @@ run/
 .gitignore
 
 # Other
+dev.env
+buildVersion.properties
 thumbs.db
 __save
