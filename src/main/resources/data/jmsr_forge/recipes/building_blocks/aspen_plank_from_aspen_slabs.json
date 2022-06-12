@@ -20,6 +20,10 @@
         {
             "type": "forge:mod_loaded",
             "modid": "atmospheric"
-        }
+        },
+		{
+			"type": "forge:item_exists",
+			"item": "atmospheric:aspen_slab"
+		}
     ]
 }
