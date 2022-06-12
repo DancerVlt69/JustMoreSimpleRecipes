@@ -7,6 +7,8 @@
 	"#bamboo_blocks:planks",
 	"#bambooeverything:planks",
     "#biomesopelty:planks",
-	"#environmental:plans"
+	"#endergetic::planks",
+	"#environmental:planks",
+	"#upgrade_aquatic:planks"
   ]
 }

@@ -7,7 +7,8 @@
 	"#bamboo_blocks:wooden_slabs",
 	"#bambooeverything:wooden_slabs",
 	"#biomesoplenty:wooden_slabs",
-	"#environmental:wooden_slabs"
-	
+	"#endergetic:wooden_slabs",
+	"#environmental:wooden_slabs",
+	"#upgrade_aquatic:wooden_slabs"
     ]
 }
