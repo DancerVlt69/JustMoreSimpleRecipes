@@ -1,5 +1,5 @@
 {
-    "group": "kmsr:get_sticks",
+    "group": "jmsr:get_sticks",
 	"type": "minecraft:crafting_shapeless",
 	
     "ingredients": [
