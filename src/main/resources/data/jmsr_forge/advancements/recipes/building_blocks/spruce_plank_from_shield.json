@@ -2,19 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "jmsr_forge:tools/pickaxe_with_stone"
+      "jmsr_forge:building_blocks/spruce_plank_from_shield"
     ]
   },
   "criteria": {
-    "has_ingredients": {
+    "has_shield": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:stone"
-          },
-          {
-            "item": "minecraft:stick"
+            "item": "minecraft:shield"
           }
         ]
       }
@@ -22,13 +19,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "jmsr_forge:tools/pickaxe_with_stone"
+        "recipe": "jmsr_forge:building_blocks/spruce_plank_from_shield"
       }
     }
   },
   "requirements": [
     [
-      "has_ingredients",
+      "has_shield",
       "has_the_recipe"
     ]
   ]
