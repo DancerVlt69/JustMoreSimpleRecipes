@@ -10,7 +10,7 @@ JMSR changelog:
     * Stone- * Axe, * Hoe, * Shovel and/or  * Sword from (Clean-) Stone
     * Wooden Planks from Wooden Slabs for the mods
         - BambooEverything
-        - Environmental (Cherry)
+        - Environmental (Cherry, Willow, Wisteria)
 
 - adding & automate buildVersionNumber
 - updating recipes list (txt)
@@ -61,7 +61,7 @@ Inside the mod
 
 	* Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
 	* Leather from Rotten Flesh on the Campfire
-	* Planks from Wooden Slaps (39 recipes) | 2 Planks from 4 Slabs
+	* Planks from Wooden Slaps (36 recipes) | 2 Planks from 4 Slabs
 		
 		supported Wood types 
 			
@@ -71,6 +71,7 @@ Inside the mod
 			* Autumnity
 			* Bamboo Blocks (V 2.1.0)
 			* Biomes O' Plenty
+			* Environmental
 			* The Endergetic
 			* Upgrade Aquatic
 

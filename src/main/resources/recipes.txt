@@ -44,7 +44,7 @@
 
 - Strings from a white Wool Block
 
-- Wooden Planks from Wooden Slabs | supported Wood types are
+- Wooden Planks from Wooden Slabs (36 types) | supported Wood types are
 
 	* Minecraft Vanilla
 	
