@@ -11,9 +11,12 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
+def bNumber = System.getenv("BNUMBER")
+println ("System buildNumber is ${bNumber}.")
+
 // version = '1.0'
-version = "${minecraft_version}-${modVersion}-${buildVersion}"
-group = "net.DancerVLT69" //"net.DancerVLT69.${modId}"
+version = "${minecraftVersion}-${modVersion}-build.${VERSION_BUILD}"
+group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modId}"
 
 //java.toolchain.languageVersion = JavaLanguageVersion.of(8)
@@ -84,15 +87,38 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : project.modName,
-                "Specification-Vendor"    : "DancerVLT69",
+                "Specification-Vendor"    : project.modOwner,
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : project.modName,
                 "Implementation-Version"  : project.modVersion,
-                "Implementation-Vendor"   : "DancerVLT69",
+                "Implementation-Vendor"   : project.modOwner,
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 }
+
+task incrementBuildNumber {
+    def versionPropFile = file('gradle.properties')
+    if (versionPropFile.canRead()) {
+        Properties versionProps = new Properties()
+        versionProps.load(versionPropFile.newDataInputStream())
+        // versionProps.load(new FileInputStream(versionPropFile))
+        Integer nextBuildNum = ( (versionProps.getProperty('VERSION_BUILD') as BigDecimal) + 1 )
+        // versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
+        versionProps.setProperty('VERSION_BUILD', nextBuildNum.toString())
+        // versionProps['VERSION_BUILD'] = versionBuild.toString()
+        versionProps.store(versionPropFile.newWriter(), null)
+        versionProps.load(versionPropFile.newDataInputStream())
+        println ("BuildNumber is set to ${VERSION_BUILD}.")
+    } else {
+        throw new FileNotFoundException("Can not read the property file!")
+    }
+}
+
+// task releaseJars(type: Copy) {
+//    from incrementBuildNumber
+//    from jar
+// }
 
 // apply from: 'mcreator.gradle'
 
