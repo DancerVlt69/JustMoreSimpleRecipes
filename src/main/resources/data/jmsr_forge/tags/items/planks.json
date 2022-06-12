@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+	"#minecraft:planks",
+	"#biomesopelty:planks"
+  ]
 }
