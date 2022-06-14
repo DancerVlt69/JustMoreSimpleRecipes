@@ -1,13 +1,13 @@
 {
 	"type": "minecraft:crafting_shaped",
-
+	"group": "bleaching_wool_blocks",
 	"pattern": [
 		"#",
 		"W"
 	],
 	"key": {
 		"#": {
-			"tag": "minecraft:colored_wool_blocks"
+			"tag": "jmsr_forge:colored_wool_blocks"
 		},
 		"W": {
 			"item": "minecraft:water_bucket"
