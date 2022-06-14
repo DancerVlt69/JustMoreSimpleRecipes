@@ -6,7 +6,9 @@
 	"minecraft:golden_sword",
 	"minecraft:iron_sword",
 	"minecraft:diamond_sword",
-	"minecraft:netherite_sword",
+	"minecraft:netherite_sword"
+  ],
+	"optional": [
 	"appliedenergistics2:certus_quartz_sword",
 	"appliedenergistics2:nether_quartz_sword",
 	"appliedenergistics2:certus_quartz_cutting_knife",
