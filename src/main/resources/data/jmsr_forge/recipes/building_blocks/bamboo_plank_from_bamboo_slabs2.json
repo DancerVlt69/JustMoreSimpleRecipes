@@ -5,13 +5,11 @@
         "__",
         "__"
     ],
-	
     "key": {
         "_": {
             "item": "bambooeverything:bamboo_slab"
         }
     },
-
     "result": {
         "item": "bambooeverything:bamboo_bundle",
         "count": 2

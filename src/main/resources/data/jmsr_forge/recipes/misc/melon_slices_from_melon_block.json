@@ -9,7 +9,7 @@
             "item": "minecraft:melon"
         },
         "S": {
-            "tag": "minecraft:blading_tools"
+            "tag": "jmsr_forge:blading_tools"
         }
     },
     "result": {
