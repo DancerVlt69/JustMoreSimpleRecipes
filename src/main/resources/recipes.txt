@@ -5,6 +5,12 @@
 
 - Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
 
+- Blocks from Slabs (like 'Planks from Slabs') for
+    * Andesite,
+    * Diorite,
+    * Granite,
+    * Nether-Bricks
+
 - Bone Meal from a Nautilus Shell
 
 - Diamond from Coal-Blocks
