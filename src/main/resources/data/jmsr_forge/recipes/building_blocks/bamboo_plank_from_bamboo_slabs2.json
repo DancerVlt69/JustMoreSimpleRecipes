@@ -20,8 +20,8 @@
             "modid": "bambooeverything"
         },
         {
-            "type": "forge:mod_loaded",
-            "item": "bambooeverything:bamboo_bundle"
+            "type": "forge:item_exists",
+            "item": "bambooeverything:bamboo_slab"
         }
     ]
 }

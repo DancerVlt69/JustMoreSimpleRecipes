@@ -20,8 +20,8 @@
             "modid": "bamboo_blocks"
         },
         {
-            "type": "forge:mod_loaded",
-            "item": "bamboo_blocks:bamboo_planks"
+            "type": "forge:item_exists",
+            "item": "bamboo_blocks:bamboo_slab"
         }
     ]
 }
