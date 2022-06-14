@@ -11,9 +11,12 @@ JMSR changelog:
     * Wooden Planks from Wooden Slabs for the mods
         - BambooEverything
         - Environmental (Cherry, Willow, Wisteria)
+    * Blocks from Slabs for
+        - Andesite, Diorite, Granit, Nether-Bricks
 
 - adding & automate buildVersionNumber
 - updating recipes list (txt)
+- adding issue tracker url
 
 ----------
  V 0.1.7d
