@@ -4,23 +4,22 @@
 		"U U",
 		"UBU",
 		"UUU"
-],
+	],
 	"key": {
 		"U": {
 			"item": "pamhc2foodcore:freshwateritem"
 		},
 		"B": {
-			"tag": "jmsr_forge:colored_wool_blocks"
+			"tag": "minecraft:colored_wool_blocks"
 		}
 	},
 	"result": {
 		"item": "minecraft:white_wool",
 		"count": 1
 	},
-	
 	"conditions": [
 		{
-			"type": "forge:mod_loded",
+			"type": "forge:mod_loaded",
 			"modid": "pamhc2foodcore"
 		},
 		{

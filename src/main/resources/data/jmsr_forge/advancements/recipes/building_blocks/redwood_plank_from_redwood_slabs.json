@@ -32,5 +32,15 @@
       "has_redwood_slabs",
       "has_the_recipe"
     ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "biomesoplenty:redwood_slab"
+    }
   ]
 }

@@ -5,15 +5,23 @@
         "__",
         "__"
     ],
-	
     "key": {
         "_": {
             "item": "endergetic:poise_slab"
         }
     },
-	
     "result": {
         "item": "endergetic:poise_planks",
         "count": 2
-    }
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "endergetic"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "endergetic:poise_planks"
+        }
+    ]
 }

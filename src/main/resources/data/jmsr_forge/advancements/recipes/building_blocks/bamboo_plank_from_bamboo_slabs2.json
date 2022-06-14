@@ -32,5 +32,15 @@
       "has_bamboo_slabs",
       "has_the_recipe"
     ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bambooeverything"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "bambooeverything:bamboo_slab"
+    }
   ]
 }

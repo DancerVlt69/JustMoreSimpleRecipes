@@ -32,5 +32,15 @@
       "has_kousa_slabs",
       "has_the_recipe"
     ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "atmospheric:kousa_slab"
+    }
   ]
 }

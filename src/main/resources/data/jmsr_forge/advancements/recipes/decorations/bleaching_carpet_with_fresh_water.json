@@ -31,5 +31,15 @@
       "has_ingredients",
       "has_the_recipe"
     ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pamhc2foodcore"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "pamhc2foodcore:freshwateritem"
+    }
   ]
 }

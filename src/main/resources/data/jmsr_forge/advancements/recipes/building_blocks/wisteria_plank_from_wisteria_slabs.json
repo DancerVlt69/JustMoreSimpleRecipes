@@ -32,5 +32,15 @@
       "has_wisteria_slabs",
       "has_the_recipe"
     ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "environmental:wisteria_slab"
+    }
   ]
 }

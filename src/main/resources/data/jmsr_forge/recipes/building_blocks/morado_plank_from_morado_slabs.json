@@ -5,15 +5,23 @@
         "__",
         "__"
     ],
-
     "key": {
         "_": {
             "item": "atmospheric:morado_slab"
         }
     },
-	
     "result": {
         "item": "atmospheric:morado_planks",
         "count": 2
-    }
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "atmospheric"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "atmospheric:morado_planks"
+        }
+    ]
 }

@@ -32,5 +32,15 @@
       "has_poise_slabs",
       "has_the_recipe"
     ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "endergetic:poise_slab"
+    }
   ]
 }
