@@ -2,7 +2,7 @@
 	"type": "minecraft:blasting",
 
 	"ingredient": {
-		"tag": "minecraft:diamond_armors"
+		"tag": "jmsr_forge:diamond_armors"
 	},
 	"result": "minecraft:diamond",
 	"experience": 0.5,
