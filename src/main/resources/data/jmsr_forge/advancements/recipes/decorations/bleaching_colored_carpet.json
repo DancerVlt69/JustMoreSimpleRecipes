@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "jmsr_forge:colored_carpet"
+            "tag": "jmsr_forge:colored_carpets"
           },
           {
             "item": "minecraft:water_bucket"

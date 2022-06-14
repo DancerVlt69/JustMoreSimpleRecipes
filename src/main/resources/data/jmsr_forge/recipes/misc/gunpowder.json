@@ -1,11 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
-	
     "pattern": [
         " # ",
         "QCQ"
     ],
-	
     "key": {
         "#": {
             "item": "minecraft:glowstone_dust"
@@ -17,7 +15,6 @@
             "item": "minecraft:charcoal"
         }
     },
-	
     "result": {
         "item": "minecraft:gunpowder",
         "count": 3

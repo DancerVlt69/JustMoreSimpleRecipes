@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "group": "slabs2blocks",
     "pattern": [
         "__",
         "__"

@@ -1,14 +1,11 @@
 {
     "type": "minecraft:crafting_shaped",
-	
 	"group": "name_tags",
-	
 	"pattern": [
         " __",
         "S  ",
 		"S  "
     ],
-	
     "key": {
         "_": {
             "tag": "minecraft:wooden_slabs"
@@ -20,10 +17,8 @@
         	{
         		"item": "minecraft:lead"
         	}
-
         ]
     },
-	
     "result": {
         "item": "minecraft:name_tag",
         "count": 2

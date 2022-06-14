@@ -4,10 +4,7 @@
 	"ingredient": {
 		"tag": "minecraft:diamond_armors"
 	},
-
 	"result": "minecraft:diamond",
-
 	"experience": 0.5,
-
 	"cookingtime": 100
 }

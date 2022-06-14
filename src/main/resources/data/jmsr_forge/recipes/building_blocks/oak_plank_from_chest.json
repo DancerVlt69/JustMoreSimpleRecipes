@@ -1,13 +1,10 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "#"
-    ],
-    "key": {
-        "#": {
-            "item": "minecraft:chest"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:shest"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:oak_planks",
         "count": 4

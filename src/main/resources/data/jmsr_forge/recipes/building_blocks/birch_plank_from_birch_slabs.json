@@ -5,13 +5,11 @@
         "__",
         "__"
     ],
-	
     "key": {
         "_": {
             "item": "minecraft:birch_slab"
         }
     },
-	
     "result": {
         "item": "minecraft:birch_planks",
         "count": 2
