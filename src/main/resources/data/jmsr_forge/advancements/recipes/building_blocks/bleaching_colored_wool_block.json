@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:colored_wool_blocks"
+            "tag": "jmsr_forge:colored_wool_blocks"
           },
           {
             "item": "minecraft:water_bucket"
