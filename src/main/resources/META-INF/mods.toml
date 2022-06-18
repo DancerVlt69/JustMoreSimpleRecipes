@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/DancerVlt69/JustMoreSimpleRecipes/issues"
 
 [[mods]]
 modId="jmsr_forge"
-version = "1.16.x-${file.jarVersion}" #version="1.16.x-0.2.0a"
+version = "1.16.x-0.2.1b"
 displayName="JMSR for Forge"
 credits="MCreator was used for the initial version - https://mcreator.net/about"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/jmsr-just-more-simple-recipes"
