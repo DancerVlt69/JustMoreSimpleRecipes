@@ -6,9 +6,7 @@
 - Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
 
 - Blocks from Slabs (like 'Planks from Slabs') for
-    * Andesite,
-    * Diorite,
-    * Granite,
+    * Andesite, Diorite, Granite,
     * Nether-Bricks
 
 - Bone Meal from a Nautilus Shell
@@ -32,9 +30,22 @@
 
 - Magma Cream from Magma Block, plus 0.2 XP
 
-- Oak Plank from Chest and Shield
+- Oak/Spruce Plank from Chest and Shield
 
 - Paper from Bamboo (Sticks)
+
+- Planks from Wooden Slabs (36 types) | supported Wood types are
+
+	* Minecraft Vanilla
+
+	* Atmospheric
+	* Autumnity
+	* Bamboo Blocks (V 2.1.0)
+	* BambooEverithing
+	* Biomes O' Plenty
+	* Environmental
+	* The Endergetic
+	* Updgrade Aquatic
 
 - Stick from Arrows or Bow - 2 recipes
 
@@ -49,19 +60,6 @@
 - Stone- * Axe, * Hoe, * Pickaxe, * Shovel and/or  * Sword from (Clean-) Stone
 
 - Strings from a white Wool Block
-
-- Wooden Planks from Wooden Slabs (36 types) | supported Wood types are
-
-	* Minecraft Vanilla
-	
-	* Atmospheric
-	* Autumnity
-	* Bamboo Blocks (V 2.1.0)
-	* BambooEverithing
-	* Biomes O' Plenty
-	* Environmental
-	* The Endergetic
-	* Updgrade Aquatic
 
 ----------
  Campfire
