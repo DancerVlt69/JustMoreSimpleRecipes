@@ -26,7 +26,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "MCreator was used for the inital version - https://mcreator.net/about",
     "modElementsPackage": "net.dancervlt69.jmsrforge",
     "lockBaseModFiles": false
   },
