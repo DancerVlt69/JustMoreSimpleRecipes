@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:blasting",
-
+	"group": "getDiamonds",
 	"ingredient": {
 		"tag": "jmsr_forge:diamond_tools"
 	},
