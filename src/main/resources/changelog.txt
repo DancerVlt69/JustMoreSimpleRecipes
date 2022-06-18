@@ -1,9 +1,17 @@
-JMSR changelog:
+JMSR changelog: this Mod-Version is tested with Forge 36.2.35
+
+----------
+ V 0.2.1b
+----------
+- added some missing advancements
+- added recipes:
+    * Blocks from Slabs for
+        -
+- grouped Stone-Tools recipes
 
 ----------
  V 0.2.0a (right now in Alpha-Test)
 ----------
-- this Mod-Version is tested with Forge 36.2.35
 
 - adding a lot of missing advancements
 - adding recipes:
@@ -15,6 +23,7 @@ JMSR changelog:
         - Andesite, Diorite, Granit, Nether-Bricks
 
 - adding & automate buildVersionNumber
+- grouped some recipes
 - updating recipes list (txt)
 - adding issue tracker url
 
