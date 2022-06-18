@@ -6,18 +6,18 @@
         "#C#"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:obsidian"
-        },
-        "C": {
-            "item": "minecraft:crying_obsidian"
-        },
-        "N": {
-			"item": "minecraft:chest"
-        }
+      "#": {
+        "item": "minecraft:obsidian"
+      },
+      "C": {
+        "item": "minecraft:crying_obsidian"
+      },
+      "N": {
+        "item": "minecraft:chest"
+      }
     },
     "result": {
-        "item": "minecraft:shulker_box",
-        "count": 1
+      "item": "minecraft:shulker_box",
+      "count": 1
     }
 }
