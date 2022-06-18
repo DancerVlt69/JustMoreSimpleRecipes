@@ -1,5 +1,6 @@
 {	
 	"type": "minecraft:blasting",
+	"group": "getIronNuggets",
     "ingredient": {
         "item": "minecraft:iron_door"
     },
