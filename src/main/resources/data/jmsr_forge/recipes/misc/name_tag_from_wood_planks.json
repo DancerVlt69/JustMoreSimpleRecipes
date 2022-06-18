@@ -1,26 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shaped",
 	"group": "name_tags",
 	"pattern": [
-        "S  ",
-		"S##",
-        "S  "
-    ],
-    "key": {
-        "#": {
-            "tag": "minecraft:planks"
-        },
-        "S": [
-        	{
-            	"item": "minecraft:string"
-			},
-			{
-				"item": "minecraft:lead"
-			}
-		]
+    "S  ",
+    "S##",
+    "S  "
+  ],
+  "key": {
+    "#": {
+      "tag": "jmsr_forge:wooden_planks"
     },
-    "result": {
-        "item": "minecraft:name_tag",
-        "count": 3
+    "S":{
+      "tag": "jmsr_forge:cords"
+    }
+  },
+  "result": {
+    "item": "minecraft:name_tag",
+    "count": 3
     }
 }
