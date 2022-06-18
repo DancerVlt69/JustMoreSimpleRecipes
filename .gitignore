@@ -15,6 +15,7 @@ bin
 
 # MCreator workspace
 .mcreator/
+*.mcreator
 
 # Minecraft client/server files
 run/
