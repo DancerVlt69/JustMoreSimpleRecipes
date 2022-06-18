@@ -88,7 +88,7 @@ jar {
         attributes([
                 "Specification-Title"     : project.modName,
                 "Specification-Vendor"    : project.modOwner,
-                "Specification-Version"   : "1",
+                "Specification-Version"   : project.modVersion,
                 "Implementation-Title"    : project.modName,
                 "Implementation-Version"  : project.modVersion,
                 "Implementation-Vendor"   : project.modOwner,
