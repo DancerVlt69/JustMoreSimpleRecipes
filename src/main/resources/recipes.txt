@@ -8,7 +8,7 @@
 - Blocks from Slabs (like 'Planks from Slabs') for (grouped)
     * Andesite, Diorite, Granite,
     * Nether-Bricks
-	* Mud-Bricks (MC 1.19)
+	* Minecraft Mud-Bricks (MC 1.19)
 
 - Bone Meal from a Nautilus Shell
 
