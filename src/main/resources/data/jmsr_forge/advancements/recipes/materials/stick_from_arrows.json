@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
+  "group": "getSticks",
   "rewards": {
     "recipes": [
       "jmsr_forge:materials/stick_from_arrows"
