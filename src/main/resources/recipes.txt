@@ -5,13 +5,14 @@
 
 - Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
 
-- Blocks from Slabs (like 'Planks from Slabs') for
+- Blocks from Slabs (like 'Planks from Slabs') for (grouped)
     * Andesite, Diorite, Granite,
     * Nether-Bricks
+	* Mud-Bricks (MC 1.19)
 
 - Bone Meal from a Nautilus Shell
 
-- Diamond from Coal-Blocks
+- Diamond from Coal-Blocks, Diamond-Armors & Diamond-Tools
 
 - Gunpowder from Netherquartz, Charcoal and Glowstone Powder
 
@@ -26,11 +27,13 @@
 	* Horse Armor gives 2 Leather
 	* Saddle gives 2 Leather
 
-- Name Tags from Strings and Pressure Plates, Wooden Slabs or Wooden Planks
+- Name Tags from Strings with Pressure Plates, Wooden Slabs or Wooden Planks
 
-- Magma Cream from Magma Block, plus 0.2 XP
+- Magma Cream from Magma Block
 
-- Oak/Spruce Plank from Chest and Shield
+- Melon Slices form Melon (experimental)
+
+- Oak/Spruce Plank from Chest or Shield
 
 - Paper from Bamboo (Sticks)
 
@@ -38,28 +41,31 @@
 
 	* Minecraft Vanilla
 
-	* Atmospheric
-	* Autumnity
-	* Bamboo Blocks (V 2.1.0)
-	* BambooEverithing
-	* Biomes O' Plenty
-	* Environmental
-	* The Endergetic
-	* Updgrade Aquatic
+	* Atmospheric				(only MC 1.16x, assuming the mod is available)
+	* Autumnity					(only MC 1.16x, assuming the mod is available)
+	* Bamboo Blocks (V 2.1.0)	(only MC 1.16x and 1.18x, assuming the mod is available)
+	* BambooEverithing			(only MC 1.16x and 1.18x, assuming the mod is available)
+	* Biomes O' Plenty			(not available for 1.16. 2, check out if the version for 1.16.1 is running on 1.16.2)
+	* Environmental				(only MC 1.16x, assuming the mod is available)
+	* The Endergetic			(only MC 1.16x, assuming the mod is available)
+	* Updgrade Aquatic			(only MC 1.16x, assuming the mod is available)
 
-- Stick from Arrows or Bow - 2 recipes
+- Stick from Arrows or Bow - 2 recipes (grouped)
 
 	* Arrow gives 1 Stick
 	* Bow gives 1 Stick
 
-- Stone-Blocks from Slabs - 2 recipes
+- Stone-Blocks from Slabs - 2 recipes (grouped)
 	
 	* Cobblestone
 	* Stone
 
-- Stone- * Axe, * Hoe, * Pickaxe, * Shovel and/or  * Sword from (Clean-) Stone
+- Stone-Tools (* Axe, * Hoe, * Pickaxe, * Shovel and/or  * Sword) with Stick & (Clean-) Stone (grouped)
 
 - Strings from a white Wool Block
+
+- and 3 undocumented recipes ;) 
+- Tip, for one of them you need a Enderchest, for the other you need Iron-Bars, Crying-/Osidian, and an Ender-Eye or Magma-Cream...
 
 ----------
  Campfire
@@ -68,20 +74,21 @@
 - Leather from Rotten Flesh
 - Red Dye from Nether Warts
 
-------------------
- Blasting Furnace
-------------------
-
-- Brick Block from Clay Block (10 sec.), plus 0.35 XP per block
-- Iron Nuggets from (empty) Bucket (9 sec.), plus 0.2 XP per invested Iron Ingot
-- Iron Nuggets from Iron Door(6 sec.), plus 0.2 XP per invested Iron Ingot
-- Magma Cream from Magma Block (9 sec.), plus 0.3 (0.1 per Magma Cream)
-- Red Dye from Nether Warts
-
 
 ---------
  Furnace
 ---------
 
-- Leather from Rotten Flesh (9 sec.), plus 0.2 XP
+- Iron Nuggets from (empty) Bucket, Iron-Bars and Iron-Door
+- Leather from Rotten Flesh
 - Red Dye from Nether Warts
+
+------------------
+ Blasting Furnace
+------------------
+
+- Brick Block from Clay Block
+- Iron Nuggets from (empty) Bucket, Iron-Bars and Iron-Door
+- Magma Cream from Magma Block
+- Red Dye from Nether Warts
+
