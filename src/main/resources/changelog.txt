@@ -5,9 +5,15 @@ JMSR changelog:
 ----------
  V 0.2.1b
 ----------
-- added missing and updated advancements
-- added and updated recipes
-- grouped some recipes
+* added/updated:
+  - recipe "Slabs to Block" for polished -Andesite / -Diorite / -Granite,
+    Polished- / Blackstone / -Bricks
+  - some missing advancements,
+  - grouped some recipes
+
+* fixed:
+  - issue#4 parsing error loading custom advancement, unknown required criterion
+  - issue parsing error loading recipe, missing item
 
 ----------
  V 0.2.0a (right now in Alpha-Test)

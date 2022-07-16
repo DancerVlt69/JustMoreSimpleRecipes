@@ -2,16 +2,24 @@
 build
 .gradle
 
-# Eclipse
-bin
-*.launch
-.classpath
-.metadata
-.project
-
 # Other IDE related folders
 .idea/
 .settings/
+
+# Eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
 
 # MCreator workspace
 .mcreator/
@@ -25,7 +33,9 @@ run/
 .gitignore
 
 # Other
-dev.env
-buildVersion.properties
+run
+.env/
+*.env
 thumbs.db
+test/
 __save

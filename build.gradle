@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         maven { url = "https://files.minecraftforge.net/maven" } //maven { url = 'https://maven.minecraftforge.net' }
+
         mavenCentral()
     }
     dependencies {
@@ -15,12 +16,29 @@ def bNumber = System.getenv("BNUMBER")
 println ("System buildNumber is ${bNumber}.")
 
 // version = '1.0'
-version = "${minecraftVersion}-${modVersion}-build.${VERSION_BUILD}"
+version = "${minecraftVersion}-${modVersion}-${VERSION_BUILD}"
 group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modId}"
 
 //java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
+
+repositories {
+    maven {
+        name = "Progwm16 JEI maven"
+        url = "https://dvs1.progwml6.com//files/maven/"
+    }
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+}
 
 minecraft {
     mappings channel: 'official', version: '1.16.5' //'snapshot'
@@ -81,6 +99,17 @@ minecraft {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.35'
+
+    // JEI - Just Enough Items
+    // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}")
+    // runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
+    // runtimeOnly fg.deobf("curse.maven:jei-238222:3874762")
+    // runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
+
+    // Jade (Hwyla Fork)
+    runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
+
 }
 
 jar {
@@ -97,19 +126,22 @@ jar {
     }
     task incrementBuildNumber {
         def versionPropFile = file('gradle.properties')
-        if (versionPropFile.canRead()) {
-            Properties versionProps = new Properties()
-            versionProps.load(versionPropFile.newDataInputStream())
-            // versionProps.load(new FileInputStream(versionPropFile))
-            Integer nextBuildNum = ( (versionProps.getProperty('VERSION_BUILD') as BigDecimal) + 1 )
-            // versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
-            versionProps.setProperty('VERSION_BUILD', nextBuildNum.toString())
-            // versionProps['VERSION_BUILD'] = versionBuild.toString()
-            versionProps.store(versionPropFile.newWriter(), null)
-            versionProps.load(versionPropFile.newDataInputStream())
-            println ("BuildNumber is set to ${VERSION_BUILD}.")
-        } else {
-            throw new FileNotFoundException("Can not read the property file!")
+        def gTask = System.getenv("TASK")
+        if (gTask == "createJAR") {
+            if (versionPropFile.canRead()) {
+                Properties versionProps = new Properties()
+                versionProps.load(versionPropFile.newDataInputStream())
+                // versionProps.load(new FileInputStream(versionPropFile))
+                Integer nextBuildNum = ((versionProps.getProperty('VERSION_BUILD') as BigDecimal) + 1)
+                // versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
+                versionProps.setProperty('VERSION_BUILD', nextBuildNum.toString())
+                // versionProps['VERSION_BUILD'] = versionBuild.toString()
+                versionProps.store(versionPropFile.newWriter(), null)
+                versionProps.load(versionPropFile.newDataInputStream())
+                println("BuildNumber is set to ${VERSION_BUILD}.")
+            } else {
+                throw new FileNotFoundException("Can not read the property file!")
+            }
         }
     }
 }
