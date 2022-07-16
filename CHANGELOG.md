@@ -6,8 +6,9 @@ JMSR changelog:
  V 0.2.1b build 41 | 2022/07/16
 -------------------------------
 * added/updated:
-  - recipe "Slabs to Block" for polished -Andesite / -Diorite / -Granite,
-    Polished- / Blackstone / -Bricks
+  - recipe "Slabs to Block" for
+    * polished -Andesite / -Diorite / -Granite,
+    * Polished- / Blackstone / -Bricks
   - some missing advancements,
   - grouped some recipes
 
