@@ -7,11 +7,11 @@
     ],
     "key": {
         "_": {
-            "item": "minecraft:stone_slab"
+            "item": "minecraft:smooth_stone_slab"
         }
     },
     "result": {
-        "item": "minecraft:stone",
+        "item": "minecraft:smooth_stone",
         "count": 2
     }
 }

@@ -31,6 +31,7 @@ JMSR changelog:
 * grouped some recipes
 * updating recipes list (txt)
 * adding issue tracker url
+* updating license version from GNU 2.0 to 3.0   
 
 ----------
  V 0.1.7d
