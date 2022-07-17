@@ -98,7 +98,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.2.35'
+    minecraft "net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}"
 
     // JEI - Just Enough Items
     // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
@@ -126,19 +126,27 @@ jar {
     }
     task incrementBuildNumber {
         def versionPropFile = file('gradle.properties')
+        def buildPropFile = file('.env/dev.env')
         def gTask = System.getenv("TASK")
         if (gTask == "createJAR") {
             if (versionPropFile.canRead()) {
                 Properties versionProps = new Properties()
+                Properties buildProps = new Properties()
                 versionProps.load(versionPropFile.newDataInputStream())
+                buildProps.load(buildPropFile.newDataInputStream())
                 // versionProps.load(new FileInputStream(versionPropFile))
                 Integer nextBuildNum = ((versionProps.getProperty('VERSION_BUILD') as BigDecimal) + 1)
+                Integer newBuildNumber = ((vuildProps.getPropertie('buildNumber') as BigDecimal) + 1)
                 // versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
                 versionProps.setProperty('VERSION_BUILD', nextBuildNum.toString())
+                buildProps.setProperty('buildNumber', newBuildNumber.toString())
                 // versionProps['VERSION_BUILD'] = versionBuild.toString()
                 versionProps.store(versionPropFile.newWriter(), null)
+                buildProps.store(buildPropFile.newWriter(), null)
                 versionProps.load(versionPropFile.newDataInputStream())
+                buildProps.load(buildPropFile.newDataInputStream())
                 println("BuildNumber is set to ${VERSION_BUILD}.")
+                println("newBuildNumber is set to ${builBumber}.")
             } else {
                 throw new FileNotFoundException("Can not read the property file!")
             }
