@@ -3,19 +3,21 @@ JMSR changelog:
     Forge 32.0.107 | 33.0.61 | 34.1.41 | 35.1.37 | 36.2.35
 
 -------------------------------
- V 0.2.1b build 41 | 2022/07/17
+ V 0.2.1b build 47 | 2022/07/18
 -------------------------------
 * added/updated:
   - "Slabs to Block" - Recipes and their Advancements for
     * Polished -Andesite / -Diorite / -Granite,
     * Polished- / Blackstone / -Bricks
-    * Cut- / Smooth- Red- / -Sandstone 
-  - some missing Advancements,
+    * Cut- / Smooth- Red- / -Sandstone
+    * Bricks
+  - some other missing Advancements,
   - grouped some Recipes
+  - updated Forge to Version *36.2.39*
 
 * fixed:
   - issue#4 parsing error loading custom advancement, unknown required criterion
-  - issue parsing error loading recipe, missing item
+  - issue#6 parsing error loading recipe, missing item
 
 -----------------------------------
  V 0.2.0a (right now in Alpha-Test)
