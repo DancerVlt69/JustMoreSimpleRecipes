@@ -3,92 +3,82 @@
  Crafting (2x2) / - Table (3x3)
 --------------------------------
 
-- Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
+* Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
 
-- Blocks from Slabs (like 'Planks from Slabs') for (grouped)
-    * Andesite, Diorite, Granite,
-    * Nether-Bricks
-	* Minecraft Mud-Bricks (MC 1.19)
+* Blocks from Slabs (like 'Planks from Slabs') for (grouped)
+    - ALL 'Stone'-Variants where Slabs exist in the MC-Version you play
+        * Mod-Support eg. Biomes 'o Plenty and other will follow soon
 
-- Bone Meal from a Nautilus Shell
+	- Minecraft Mud-Bricks (MC 1.19)
 
-- Diamond from Coal-Blocks, Diamond-Armors & Diamond-Tools
+* Bone Meal from a Nautilus Shell
 
-- Gunpowder from Netherquartz, Charcoal and Glowstone Powder
+* Diamond from Coal-Blocks, Diamond-Armors & Diamond-Tools
 
-- Gunpowder from a TNT-Block
+* Gunpowder from Netherquartz, Charcoal and Glowstone Powder
 
-- Leather from Armor, Horse Armor, and Saddle - 6 recipes
+* Gunpowder from a TNT-Block
 
-	* Helmet gives 1 Leather
-	* Chestplate gives 2 Leather
-	* Leggings gives 2 Lether
-	* Boots gives 1 Leaher
-	* Horse Armor gives 2 Leather
-	* Saddle gives 2 Leather
+* Leather from Armor, Horse Armor, and Saddle - 6 recipes
 
-- Name Tags from Strings with Pressure Plates, Wooden Slabs or Wooden Planks
+	- Helmet gives 1 Leather
+	- Chestplate gives 2 Leather
+	- Leggings gives 2 Leather
+	- Boots gives 1 Leather
+	- Horse Armor gives 2 Leather
+	- Saddle gives 2 Leather
 
-- Magma Cream from Magma Block
+* Name Tags from Strings with Pressure Plates, Wooden Slabs or Wooden Planks
 
-- Melon Slices form Melon (experimental)
+* Magma Cream from Magma Block
 
-- Oak/Spruce Plank from Chest or Shield
+* Melon Slices form Melon (experimental)
 
-- Paper from Bamboo (Sticks)
+* Oak/Spruce Plank from Chest or Shield
 
-- Planks from Wooden Slabs (36 types) | supported Wood types are
+* Paper from Bamboo (Sticks)
 
-	* Minecraft Vanilla
+* Planks from Wooden Slabs (36 types) | supported Wood types are
 
-	* Atmospheric				(only MC 1.16x, assuming the mod is available)
-	* Autumnity					(only MC 1.16x, assuming the mod is available)
-	* Bamboo Blocks (V 2.1.0)	(only MC 1.16x and 1.18x, assuming the mod is available)
-	* BambooEverithing			(only MC 1.16x and 1.18x, assuming the mod is available)
-	* Biomes O' Plenty			(not available for 1.16. 2, check out if the version for 1.16.1 is running on 1.16.2)
-	* Environmental				(only MC 1.16x, assuming the mod is available)
-	* The Endergetic			(only MC 1.16x, assuming the mod is available)
-	* Updgrade Aquatic			(only MC 1.16x, assuming the mod is available)
+	- Minecraft Vanilla         (8... okay 6 plus Crimson- and Warped- Planks
 
-- Stick from Arrows or Bow - 2 recipes (grouped)
+	- Atmospheric				(only MC 1.16x, assuming the mod is available)
+	- Autumnity					(only MC 1.16x, assuming the mod is available)
+	- Bamboo Blocks (V 2.1.0)	(only MC 1.16x, assuming the mod is available)
+	- BambooEverithing			(only MC 1.16x and 1.18x, assuming the mod is available)
+	- Biomes O' Plenty			(not available/found for 1.16.2, check out if the version for 1.16.1 is running on 1.16.2)
+	- Environmental				(only MC 1.16x, assuming the mod is available)
+	- The Endergetic			(only MC 1.16x, assuming the mod is available)
+	- Upgrade Aquatic			(only MC 1.16x, assuming the mod is available)
 
-	* Arrow gives 1 Stick
-	* Bow gives 1 Stick
+* Stick from Arrows or Bow - 2 recipes (grouped)
+	- Arrow gives 1 Stick
+	- Bow gives 1 Stick
 
-- Stone-Blocks from Slabs - 2 recipes (grouped)
-	
-	* Cobblestone
-	* Stone
+* Stone-Tools (* Axe, * Hoe, * Pickaxe, * Shovel and/or  * Sword) with Stick & (Clean-) Stone (grouped)
 
-- Stone-Tools (* Axe, * Hoe, * Pickaxe, * Shovel and/or  * Sword) with Stick & (Clean-) Stone (grouped)
+* Strings from a white Wool Block
 
-- Strings from a white Wool Block
-
-- and 3 undocumented recipes ;) 
-- Tip, for one of them you need a Enderchest, for the other you need Iron-Bars, Crying-/Osidian, and an Ender-Eye or Magma-Cream...
+* and 3 undocumented recipes ;)
+    Spoiler: for one of them you need an Enderchest, for the other you need Iron-Bars, Crying-/Obsidian, and an Ender-Eye or Magma-Cream...
 
 ----------
  Campfire
 ----------
-
-- Leather from Rotten Flesh
-- Red Dye from Nether Warts
-
+* Leather from Rotten Flesh
+* Red Dye from Nether Warts
 
 ---------
  Furnace
 ---------
-
-- Iron Nuggets from (empty) Bucket, Iron-Bars and Iron-Door
-- Leather from Rotten Flesh
-- Red Dye from Nether Warts
+* Iron Nuggets from (empty) Bucket, Iron-Bars and Iron-Door
+* Leather from Rotten Flesh
+* Red Dye from Nether Warts
 
 ------------------
  Blasting Furnace
 ------------------
-
-- Brick Block from Clay Block
-- Iron Nuggets from (empty) Bucket, Iron-Bars and Iron-Door
-- Magma Cream from Magma Block
-- Red Dye from Nether Warts
-
+* Brick Block from Clay Block
+* Iron Nuggets from (empty) Bucket, Iron-Bars and Iron-Door
+* Magma Cream from Magma Block
+* Red Dye from Nether Warts
