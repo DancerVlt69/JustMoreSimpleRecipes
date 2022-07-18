@@ -2,9 +2,27 @@ JMSR changelog:
 - this Mod-Version is tested with
     Forge ~~32.0.107~~ | ~~33.0.61~~ | ~~34.1.41~~ | ~~35.1.37~~ | 36.2.39
 
--------------------------------
- V 0.2.1b build 51 | 2022/07/18
--------------------------------
+-----------------------------
+**Version 1.xx** | 2022/07/19
+-----------------------------
+* First Release Version for Minecraft JE Versions
+	- ~~***1.8.9***~~ | ~~***1.12.2***~~ | ***1.15.2*** | ***1.16.x*** | ***1.18.2*** | ***1.19***.x
+
+* Short description of the Version Numbers:
+	- 1st digit = **Major-Version** of the Mod - e.g. ***V 1.***
+	- 2nd digit = will represent the MC-Version
+	  - **V 1.** ***01.*** *xxx* =  MC Version 1.8.xx
+	  - **V 1.** ***02.*** *xxx* =  MC Version 1.12.xx
+	  - **V 1.** ***03.*** *xxx* =  MC Version 1.15.xx
+	  - **V 1.** ***04.*** *xxx* =  MC Version 1.16.xx
+	  - **V 1.** ***05.*** *xxx* =  MC Version 1.18.xx
+	  - **V 1.** ***06.*** *xxx* =  MC Version 1.19...
+	- 3rd digit = **Minor-Version** of the Mod
+	- 4th digit = **Build Number** of the mod of their respective MC-Version
+
+----------------------
+ V 0.2.1b | 2022/07/18
+----------------------
 * fixed:
     - issue#4 parsing error loading custom advancement, unknown required criterion
     - issue#6 parsing error loading recipe, missing item
