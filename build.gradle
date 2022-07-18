@@ -12,11 +12,15 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-def bNumber = System.getenv("BNUMBER")
-println ("System buildNumber is ${bNumber}.")
+def buildPropFile = file('.env/dev.env')
+Properties buildProps = new Properties()
+buildProps.load(buildPropFile.newDataInputStream())
+def buildNum = buildProps.getProperty("BUILDNUMBER") as String
+
+println ("Build is ${buildNum}.")
 
 // version = '1.0'
-version = "${minecraftVersion}-${modVersion}-${VERSION_BUILD}"
+version = "${minecraftVersion}-${modVersion}-${buildNum}"
 group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modId}"
 
@@ -102,14 +106,13 @@ dependencies {
 
     // JEI - Just Enough Items
     // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}")
-    // runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
     // runtimeOnly fg.deobf("curse.maven:jei-238222:3874762")
     // runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
+    // runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}")
 
     // Jade (Hwyla Fork)
     runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
-
 }
 
 jar {
@@ -124,32 +127,22 @@ jar {
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
-    task incrementBuildNumber {
-        def versionPropFile = file('gradle.properties')
-        def buildPropFile = file('.env/dev.env')
-        def gTask = System.getenv("TASK")
-        if (gTask == "createJAR") {
-            if (versionPropFile.canRead()) {
-                Properties versionProps = new Properties()
-                Properties buildProps = new Properties()
-                versionProps.load(versionPropFile.newDataInputStream())
-                buildProps.load(buildPropFile.newDataInputStream())
-                // versionProps.load(new FileInputStream(versionPropFile))
-                Integer nextBuildNum = ((versionProps.getProperty('VERSION_BUILD') as BigDecimal) + 1)
-                Integer newBuildNumber = ((vuildProps.getPropertie('buildNumber') as BigDecimal) + 1)
-                // versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
-                versionProps.setProperty('VERSION_BUILD', nextBuildNum.toString())
-                buildProps.setProperty('buildNumber', newBuildNumber.toString())
-                // versionProps['VERSION_BUILD'] = versionBuild.toString()
-                versionProps.store(versionPropFile.newWriter(), null)
-                buildProps.store(buildPropFile.newWriter(), null)
-                versionProps.load(versionPropFile.newDataInputStream())
-                buildProps.load(buildPropFile.newDataInputStream())
-                println("BuildNumber is set to ${VERSION_BUILD}.")
-                println("newBuildNumber is set to ${builBumber}.")
-            } else {
-                throw new FileNotFoundException("Can not read the property file!")
-            }
+}
+
+task incrementBuildNumber {
+    // def buildPropFile = file('.env/dev.env')
+    def gTask = System.getenv("TASK")
+    if (gTask == "createJAR") {
+        if (buildPropFile.canRead()) {
+            // Properties buildProps = new Properties()
+            buildProps.load(buildPropFile.newDataInputStream())
+            Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger + 1)
+            buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
+            buildProps.store(buildPropFile.newWriter(), null)
+            buildProps.load(buildPropFile.newDataInputStream())
+            println("newBuildNumber is set to ${newBuildNumber}.\n")
+        } else {
+            throw new FileNotFoundException("Can not read the property file!")
         }
     }
 }
@@ -160,6 +153,3 @@ jar {
 //    from incrementBuildNumber
 //    from jar
 // }
-
-// apply from: 'mcreator.gradle'
-
