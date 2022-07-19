@@ -9,9 +9,8 @@ build
 # Eclipse
 bin
 *.launch
-.settings
-.metadata
 .classpath
+.metadata
 .project
 
 # idea
@@ -31,11 +30,13 @@ run/
 #GitHub
 .git/
 .gitignore
+.gitattributes
 
 # Other
 run
 .env/
 *.env
+JavaDoc/
 thumbs.db
 test/
 __save

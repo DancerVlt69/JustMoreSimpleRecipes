@@ -1,13 +1,14 @@
 buildscript {
     repositories {
-        maven { url = "https://files.minecraftforge.net/maven" } //maven { url = 'https://maven.minecraftforge.net' }
-
+        maven { url = 'https://maven.minecraftforge.net' }
+		// jcenter()
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
+
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
@@ -24,8 +25,7 @@ version = "${mcVersions}-${modVersion}-${buildNum}"
 group = "net.${modOwner}.${modId}"
 archivesBaseName = "${modId}"
 
-//java.toolchain.languageVersion = JavaLanguageVersion.of(8)
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
     maven {
@@ -45,16 +45,23 @@ repositories {
 }
 
 minecraft {
-    mappings channel: 'official', version: '1.16.5' //'snapshot'
+    mappings channel: 'official', version: '1.18.2'
+
+    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     runs {
         client {
             workingDirectory project.file('run')
 
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-            property 'forge.logging.console.level', 'debug'
+            property 'forge.logging.markers', 'REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'list'
 
-            mods {
+			//property 'username', 'JMSR'
+			
+            // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
+			property 'forge.enabledGameTestNamespaces', 'jmsr_forge'
+            
+			mods {
                 jmsr_forge {
                     source sourceSets.main
                 }
@@ -64,8 +71,36 @@ minecraft {
         server {
             workingDirectory project.file('run')
 
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.markers', 'REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'list'
+
+            // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
+			property 'forge.enabledGameTestNamespaces', 'jmsr_forge'
+			
+            mods {
+                jmsr_forge {
+                    source sourceSets.main
+                }
+            }
+        }
+		
+		gameTestServer {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            // The markers can be added/remove as needed separated by commas.
+            // "SCAN": For mods scan.
+            // "REGISTRIES": For firing of registry events.
+            // "REGISTRYDUMP": For getting the contents of all registries.
+            property 'forge.logging.markers', 'REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            // You can set various levels here.
+            // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
+
+            // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
+            property 'forge.enabledGameTestNamespaces', 'jmsr_forge'
 
             mods {
                 jmsr_forge {
@@ -78,18 +113,21 @@ minecraft {
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
-            // The markers can be changed as needed.
+            // The markers can be added/remove as needed separated by commas.
             // "SCAN": For mods scan.
             // "REGISTRIES": For firing of registry events.
             // "REGISTRYDUMP": For getting the contents of all registries.
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            property 'forge.logging.markers', 'REGISTRIES,REGISTRYDUMP'
 
             // Recommended logging level for the console
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
+
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
+
             args '--mod', 'jmsr_forge', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
@@ -102,25 +140,29 @@ minecraft {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}"
+    // minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    minecraft "net.minecraftforge:forge:1.18.2-${forgeVersion}"
+    // 1.18.2-40.1.51"
 
     // JEI - Just Enough Items
     // compileOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}:api")
     // runtimeOnly fg.deobf("curse.maven:jei-238222:3874762")
-    // runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
     // runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
-    runtimeOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}")
+    // runtimeOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}")
 
     // Jade (Hwyla Fork)
     runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
 }
 
+// Combine main and API source sets
 jar {
+    // from sourceSets.main.output
     manifest {
         attributes([
                 "Specification-Title"     : project.modName,
                 "Specification-Vendor"    : project.modOwner,
-                "Specification-Version"   : project.modVersion,
+                "Specification-Version"   : "1",
                 "Implementation-Title"    : project.modName,
                 "Implementation-Version"  : project.modVersion,
                 "Implementation-Vendor"   : project.modOwner,
@@ -147,9 +189,6 @@ task incrementBuildNumber {
     }
 }
 
-//task
-
-// task releaseJars(type: Copy) {
-//    from incrementBuildNumber
-//    from jar
-// }
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
