@@ -1,12 +1,15 @@
+---------------
 JMSR changelog:
-- this Mod-Version is tested with
-    Forge ~~32.0.107~~ | ~~33.0.61~~ | ~~34.1.41~~ | ~~35.1.37~~ | 36.2.39
+---------------
+This Mod-Version is tested with
+
+ *   **Forge 40.1.68**
 
 -----------------------------
 **Version 1.xx** | 2022/07/19
 -----------------------------
 * First Release Version for Minecraft JE Versions
-	- ~~***1.8.9***~~ | ~~***1.12.2***~~ | ***1.15.2*** | ***1.16.x*** | ***1.18.2*** | ***1.19***.x
+	- ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.2***~~ | ***1.16.x*** | ***1.18.2*** | ~~***1.19***.x~~
 
 * Short description of the Version Numbers:
 	- 1st digit = **Major-Version** of the Mod - e.g. ***V 1.***
@@ -39,7 +42,7 @@ JMSR changelog:
     * Red Nether-Bricks
   - some other missing Advancements,
   - grouped some Recipes
-  - updated Forge to Version *36.2.39*
+  - updated Forge to Version *36.2.39* | *40.1.68*
 
 -----------------------------------
  V 0.2.0a (right now in Alpha-Test)
