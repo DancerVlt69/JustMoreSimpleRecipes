@@ -1,31 +1,30 @@
 modLoader="javafml"
-loaderVersion="[32,)"
-license="GNU 3.0"
+loaderVersion="[40,)"
+license="Apache License version 2.0"
 issueTrackerURL="https://github.com/DancerVlt69/JustMoreSimpleRecipes/issues"
 
 [[mods]]
 modId="jmsr_forge"
-version = "1.16.x-0.2.1 rc1"
+version = "1.18.2-${file.jarVersion} "
 displayName="JMSR for Forge"
 credits="MCreator was used for the initial version - https://mcreator.net/about"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/jmsr-just-more-simple-recipes"
 logoFile="logo.png"
 authors="DancerVlt69, MCreator"
-description='''Just More Simple Recipes (JMSR) add some useful recipes to your Minecraft Java Edition'''
+description='''
+Just More Simple Recipes (JMSR) will add some useful recipes
+to your Minecraft Java Edition.'''
 
 [[dependencies.jmsr_forge]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.,)"
+    versionRange="[1.18,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.jmsr_forge]]
-    modId="forge"
-    mandatory=true
-    versionRange="[32.,)"
+[[dependencies.jmsr_forge]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[40.,)" #mandatory
     ordering="NONE"
     side="BOTH"
-
-
-
