@@ -9,12 +9,6 @@ import org.apache.logging.log4j.LogManager;
 
 import net.minecraftforge.fml.common.Mod;
 
-/* import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
- * import net.minecraftforge.fmllegacy.network.NetworkRegistry;
- * import net.minecraftforge.fmllegacy.network.NetworkEvent;
- * import net.minecraftforge.fml.common.Mod;
- */
-
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
@@ -54,6 +48,6 @@ public class JmsrForgeMod
 	private void setup(final FMLCommonSetupEvent event) {
 		// some preinit code
 		LOGGER.info("PreInit started");
-		LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+		LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getName());
 	}
 }
