@@ -1,11 +1,11 @@
----------------
+----------------
 JMSR changelog:
----------------
-This Mod-Version is tested with **Forge 39.1.2  |  40.1.68**
+----------------
+This Mod-Version is tested with **Forge 41.0.100**
 
------------------------------
-**Version 1.xx** | 2022/07/19
------------------------------
+------------------------------
+**Version 1.xx** | 2022/07/25
+------------------------------
 * First Release Version for Minecraft JE Versions
 	- ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.2***~~ | ***1.16.x*** | ***1.18x*** | ~~***1.19***.x~~
 
@@ -21,17 +21,18 @@ This Mod-Version is tested with **Forge 39.1.2  |  40.1.68**
 	- 3rd digit = **Minor-Version** of the Mod
 	- 4th digit = **Build Number** of the mod of their respective MC-Version
 
-----------------------
-V 0.2.2b | 2022/07/19
-----------------------
-* fixed:
-    - fml-loader 'downgrade' because mod was not loaded on MC-Version 1.18 and 1.18.1
+
+------------------------------------
+V 0.2.1b | 2022/07/21
+------------------------------------
+
+* porting to MC 1.19 / Forge 41.0.100
+* moved:
+    - Copper Slabs 2 Blocks into a separate recipe group 
+
 * added:
     - 'Slabs2Blocks' - Recipes for all Copper Slabs
 
-----------------------
- V 0.2.1b | 2022/07/18
-----------------------
 * fixed:
     - issue#4 parsing error loading custom advancement, unknown required criterion
     - issue#6 parsing error loading recipe, missing item
@@ -50,9 +51,9 @@ V 0.2.2b | 2022/07/19
   - grouped some Recipes
   - updated Forge to Version *36.2.39* | *40.1.68*
 
------------------------------------
+------------------------------------
  V 0.2.0a (right now in Alpha-Test)
------------------------------------
+------------------------------------
 * adding a lot of missing advancements
 * adding recipes:
     - Stone- * Axe, * Hoe, * Shovel and/or  * Sword from (Clean-) Stone
