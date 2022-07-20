@@ -1,13 +1,13 @@
 ---------------
 JMSR changelog:
 ---------------
-This Mod-Version is tested with **Forge 40.1.68**
+This Mod-Version is tested with **Forge 39.1.2  |  40.1.68**
 
 -----------------------------
 **Version 1.xx** | 2022/07/19
 -----------------------------
 * First Release Version for Minecraft JE Versions
-	- ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.2***~~ | ***1.16.x*** | ***1.18.2*** | ~~***1.19***.x~~
+	- ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.2***~~ | ***1.16.x*** | ***1.18x*** | ~~***1.19***.x~~
 
 * Short description of the Version Numbers:
 	- 1st digit = **Major-Version** of the Mod - e.g. ***V 1.***
@@ -25,7 +25,7 @@ This Mod-Version is tested with **Forge 40.1.68**
 V 0.2.2b | 2022/07/19
 ----------------------
 * fixed:
-    - fml-loader 'downgrade' because mod was not loaded on MC-Version 1.18 an 1.18.1
+    - fml-loader 'downgrade' because mod was not loaded on MC-Version 1.18 and 1.18.1
 * added:
     - 'Slabs2Blocks' - Recipes for all Copper Slabs
 
