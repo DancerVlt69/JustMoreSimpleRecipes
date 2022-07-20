@@ -23,6 +23,6 @@ description='''Just More Simple Recipes (JMSR) will add some useful recipes\nto 
 [[dependencies.jmsr_forge]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[38.,)" #mandatory
+    versionRange="[38,)" #mandatory
     ordering="NONE"
     side="BOTH"
