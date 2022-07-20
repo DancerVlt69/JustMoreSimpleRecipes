@@ -45,7 +45,7 @@ repositories {
 }
 
 minecraft {
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'official', version: '1.19'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -141,7 +141,7 @@ minecraft {
 
 dependencies {
     // minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    minecraft "net.minecraftforge:forge:1.18.2-${forgeVersion}"
+    minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}"
     // 1.18.2-40.1.51"
 
     // JEI - Just Enough Items
