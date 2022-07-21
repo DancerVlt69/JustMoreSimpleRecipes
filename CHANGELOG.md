@@ -21,10 +21,29 @@ This Mod-Version is tested with **Forge 41.0.100**
 	- 3rd digit = **Minor-Version** of the Mod
 	- 4th digit = **Build Number** of the mod of their respective MC-Version
 
+----------------------
+V 0.2.3b | 2022/07/21
+----------------------
+* added:
+    - 'Slabs2Blocks' - Recipes & Advancements for all Deepslate Slabs (MC 1.18 & above)
+    - Support for 'SlabsNstairs'-Items
 
-------------------------------------
+* moved:
+    - Copper Slabs 2 Blocks into a separate recipe group
+
+* changed: License to *GNU 3.0*
+
+----------------------
+V 0.2.2b | 2022/07/20
+----------------------
+* fixed:
+	- fml-loader 'downgrade' because mod was not loaded on MC-Version 1.18 and 1.18.1
+* added:
+	- 'Slabs2Blocks' - Recipes for all 'Vanilla' Copper Slabs (MC 1.18 & above)
+
+----------------------
 V 0.2.1b | 2022/07/21
-------------------------------------
+----------------------
 
 * porting to MC 1.19 / Forge 41.0.100
 * moved:
